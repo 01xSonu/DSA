@@ -16,8 +16,9 @@ public:
         }
         for(int i=0;i<=r;i++){
             sum=sum+cardPoints[i];
-            maxsum=max(maxsum,sum);
+            
         }
+        maxsum=max(maxsum,sum);
         while(r!=-1){
             sum=sum-cardPoints[r];
             r--;
