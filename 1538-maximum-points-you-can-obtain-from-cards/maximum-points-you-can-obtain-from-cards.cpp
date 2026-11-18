@@ -19,7 +19,7 @@ public:
             
         }
         maxsum=max(maxsum,sum);
-        while(r>=0){
+        while(r!=-1){
             sum=sum-cardPoints[r];
             r--;
             sum=sum+cardPoints[p];
