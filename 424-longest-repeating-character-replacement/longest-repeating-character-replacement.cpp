@@ -6,12 +6,9 @@ public:
         while(r<s.length()){
             hash[s[r]]++;
             maxfreq=max(maxfreq,hash[s[r]]);
-            while((r-l+1)-maxfreq>k){
+            if((r-l+1)-maxfreq>k){
                 hash[s[l]]--;
-                maxfreq=0;
-                for(int i=0;i<256;i++){
-                    maxfreq=max(maxfreq,hash[i]);
-                }
+                
                 l++;
                 
 
